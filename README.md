@@ -44,7 +44,7 @@ Open 👉 http://localhost:3000
 npm run build
 
 ### 📂 Project Structure
-________________________________________________________________
+```
 src/
  ├─ App.js              # Root wrapper
  ├─ App.css             # Global styles
@@ -54,14 +54,16 @@ src/
  ├─ index.css           # Base styles
  ├─ reportWebVitals.js  # Performance logging
  └─ setupTests.js       # Test setup
-
+```
 ### 🌍 API Reference
 We use Open-Meteo endpoints:
 
 # Geocoding API (city → coordinates)
+```
 https://geocoding-api.open-meteo.com/v1/search?name={city}
-
+```
 # Forecast API (current + daily forecast)
+```
 https://api.open-meteo.com/v1/forecast
   ?latitude={lat}
   &longitude={lon}
@@ -69,7 +71,7 @@ https://api.open-meteo.com/v1/forecast
   &daily=temperature_2m_max,temperature_2m_min,weathercode
   &timezone=auto
   &temperature_unit={celsius|fahrenheit}
-
+```
 ### 📜 License
 
 MIT License © 2025
