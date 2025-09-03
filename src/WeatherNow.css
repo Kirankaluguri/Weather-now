@@ -1,0 +1,110 @@
+.weather-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  transition: background 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Backgrounds */
+.default-bg {
+  background: linear-gradient(to bottom, #2c3e50, #34495e);
+}
+
+.clear-bg {
+  background-image: url("https://images.unsplash.com/photo-1501973801540-537f08ccae7b?auto=format&fit=crop&w=1600&q=80");
+}
+
+.clouds-bg {
+  background-image: url("https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=1600&q=80");
+}
+
+.rain-bg {
+  background-image: url("https://images.unsplash.com/photo-1503437313881-503a91226401?auto=format&fit=crop&w=1600&q=80");
+}
+
+.snow-bg {
+  background-image: url("https://images.unsplash.com/photo-1608889172557-1666d880bba7?auto=format&fit=crop&w=1600&q=80");
+}
+
+.storm-bg {
+  background-image: url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1600&q=80");
+}
+
+.fog-bg {
+  background-image: url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1600&q=80");
+}
+
+/* Title */
+.app-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Search form */
+.weather-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.weather-input {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.weather-button {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #61dafb;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.weather-button:hover {
+  background: #21a1f1;
+}
+
+/* Weather card */
+.weather-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 320px;
+}
+
+.temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.condition {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.info {
+  color: #eee;
+}
